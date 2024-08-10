@@ -1,0 +1,67 @@
+@keyframes openDemonstration {
+  75% {
+    transform: translateY(60rem);
+    
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.main {
+  margin-top: -8.7rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.demonstration {
+  z-index: 2;
+  margin-top: -5rem;
+  position: sticky;
+  width: 69.8rem;
+  height: 58.1rem;
+  top: calc(50% - 29.05rem);
+  left: calc(50% - 34.9rem);
+  animation: openDemonstration forwards 4s;
+}
+
+.demonstration__monitor {
+  position: absolute;
+  width: 100%;
+  clip-path: inset(0 0 0.1rem 0);
+}
+
+.demonstration__video {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  width: 68.232rem;
+  height: 38rem;
+  object-fit: cover;
+  overflow: hidden;
+  clip-path: inset(0.1rem 0.3rem);
+}
+
+@media (max-width: 576px) {
+  .main {
+    margin-top: -5.2rem;
+    align-items: center;
+  }
+
+  .demonstration {
+    margin-top: 10rem;
+    width: 32rem;
+    height: 26.645rem;
+    top: calc(50dvh - 13.322rem);
+    left: calc(50dvw - 16rem);
+  }
+
+  .demonstration__video {
+    top: 0.329rem;
+    left: 0.312rem;
+    width: 31.281rem;
+    height: 17.682rem;
+  }
+}

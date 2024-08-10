@@ -1,0 +1,94 @@
+.track {
+  margin-top: -12rem;
+  position: relative;
+  height: 201.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.track__circle {
+  z-index: 1;
+  width: 135rem;
+  height: 135rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  position: absolute;
+  top: -13.5rem;
+  filter: blur(120rem);
+}
+
+.track__headline {
+  text-indent: 14rem;
+  font-family: "Roboto Flex";
+  margin: 42.8rem 0 41.2rem;
+  z-index: 2;
+  width: 115.6rem;
+  color: #fff;
+  font-size: 9.6rem;
+  font-weight: 476;
+  line-height: 9.6rem;
+  text-transform: uppercase;
+  white-space: pre-wrap;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.track__description {
+  width: 174rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.track__text {
+  text-indent: 10rem;
+  font-family: "Roboto Flex";
+  margin: 0;
+  width: 50rem;
+  color: #fff;
+  font-size: 4.8rem;
+  font-weight: 476;
+  line-height: 6.24rem;
+  text-transform: uppercase;
+  white-space: pre-wrap;
+}
+
+.track__text:last-of-type {
+  text-align: end;
+}
+
+@media (max-width: 576px) {
+  .track {
+    width: 36rem;
+    height: 156.8rem;
+    overflow-x: hidden;
+  }
+
+  .track__circle {
+    top: 16rem;
+    width: 67.5rem;
+    height: 67.5rem;
+  }
+
+  .track__headline {
+    text-indent: 9rem;
+    margin: 22.2rem 0 31rem;
+    width: 32rem;
+    font-size: 4rem;
+    line-height: 100%;
+    white-space: wrap;
+  }
+
+  .track__description {
+    width: 32rem;
+    flex-direction: column;
+    gap: 40rem;
+  }
+
+  .track__text {
+    text-indent: 7rem;
+    width: 100%;
+    font-size: 2.8rem;
+    line-height: 130%;
+    z-index: 2;
+  }
+}
